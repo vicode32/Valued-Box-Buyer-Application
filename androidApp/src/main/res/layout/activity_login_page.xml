@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login_page"
+    android:orientation="vertical"
+    android:gravity="center">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="14dp"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:elevation="20dp"
+        app:cardElevation="20dp"
+        >
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center">
+            <EditText
+
+                android:backgroundTint="#70AFAFAF"
+                android:gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/username"
+                android:hint="@string/user_name"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/ic_baseline_person_24" />
+            <EditText
+                android:layout_marginTop="35dp"
+                android:backgroundTint="#70AFAFAF"
+                android:gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:hint="@string/password"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_marginRight="20dp"
+                    android:gravity="end"
+                    android:text="@string/forgot_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center">
+            <Button
+                android:text="@string/login"
+                android:id="@+id/login"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_corner_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_weight=".5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_marginStart="25dp"
+                        android:layout_weight="2"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="#70AFAFAF"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginLeft="25dp" />
+
+                    <TextView
+
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <View
+                        android:layout_marginEnd="25dp"
+                        android:layout_weight="2"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="#70AFAFAF"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/google_plus"
+                        android:layout_gravity="top"
+                        android:background="@drawable/ic_google_plus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_facebook_new_2019_seeklogo_com_3"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight=".4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp">
+                <TextView
+                    android:text="@string/don_t_have_an_accout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup"
+                        android:textColor="#EF792A" />
+            </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
