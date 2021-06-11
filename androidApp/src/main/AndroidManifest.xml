@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.valuedbox_1.android" >
+    package="com.example.valuedbox_1.android">
 
     <application
         android:allowBackup="false"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".ui.signup_page" >
-        </activity>
-        <activity android:name=".ui.login_page" />
-        <activity android:name=".ui.login_signup" />
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/ic_launcher_background">
+        <activity android:name=".ui.activity.base_activity.BaseActivity" />
+        <activity android:name="com.example.valuedbox_1.android.ui.activity.login_signup_activity.SignupPage" />
+        <activity android:name="com.example.valuedbox_1.android.ui.activity.login_signup_activity.LoginPage" />
+        <activity android:name="com.example.valuedbox_1.android.ui.activity.login_signup_activity.LoginSignup" />
         <activity
-            android:name="com.example.valuedbox_1.android.ui.MainActivity"
-            android:exported="true" >
+            android:name="com.example.valuedbox_1.android.ui.activity.login_signup_activity.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

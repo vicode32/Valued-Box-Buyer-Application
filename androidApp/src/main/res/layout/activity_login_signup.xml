@@ -3,14 +3,15 @@
 <LinearLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
-android:id="@+id/logo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logo"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"
 app:srcCompat="@drawable/logo"
 android:orientation="horizontal"
 android:gravity="center"
     android:padding="10dp"
-    android:background="@drawable/ic_login_signin">
+    android:background="@drawable/ic_login_sign_in">
 
 <LinearLayout
     android:padding="20dp"
@@ -24,27 +25,33 @@ android:gravity="center"
         android:layout_gravity="center"
         android:layout_width="229dp"
         android:layout_height="210dp"
-        android:layout_marginBottom="61dp"/>
+        android:layout_marginBottom="61dp"
+        android:contentDescription="@string/todo" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:backgroundTintMode="add"
         android:textColor="@android:color/white"
         android:background="@drawable/round_corner_button"
         android:id="@+id/login"
-        android:text="login"
+        android:text="@string/login"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_width="250dp"
-        android:layout_height="50dp"/>
-    <Button
-        android:textColor="@android:color/white"
-        android:background="@drawable/grey_button"
-        android:text="sign Up"
+        android:layout_height="50dp"
+        tools:targetApi="lollipop" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:backgroundTintMode="add"
         android:id="@+id/sign_up"
-        android:layout_marginBottom="80dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_width="250dp"
-        android:layout_height="50dp"/>
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/grey_button"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white"
+        tools:targetApi="lollipop" />
 </LinearLayout>
 </LinearLayout>

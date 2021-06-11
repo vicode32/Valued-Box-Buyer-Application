@@ -1,9 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login_signup"
+    tools:context=".ui.activity.login_signup_activity.LoginSignup"
     android:orientation="vertical"
     android:id="@+id/first"
     android:background="@drawable/ic_first_page"
@@ -13,13 +12,15 @@
         android:layout_marginTop="196dp"
         android:src="@drawable/logo"
         android:layout_width="229dp"
-        android:layout_height="210dp"/>
+        android:layout_height="210dp"
+        android:contentDescription="@string/todo" />
     <ImageView
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:layout_width="259dp"
         android:layout_height="41dp"
-        android:src="@drawable/name"/>
+        android:src="@drawable/name"
+        android:contentDescription="@string/todo" />
 
 
 

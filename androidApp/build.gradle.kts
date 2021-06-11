@@ -1,3 +1,5 @@
+
+
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -13,6 +15,13 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation ("com.mikhaellopez:circularimageview:4.3.0")
     implementation ("com.google.android.material:material:1.3.0")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation ("com.asksira.android:loopingviewpager:1.4.1")
+    implementation ("cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2")
+    implementation ("com.tbuonomo:dotsindicator:4.2")
+
+
+
 }
 
 android {
@@ -30,4 +39,7 @@ android {
             isMinifyEnabled = false
         }
     }
+
 }
+
+

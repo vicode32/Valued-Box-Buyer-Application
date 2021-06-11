@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login_page"
+    tools:context=".ui.activity.login_signup_activity.LoginPage"
     android:orientation="vertical"
-    android:background="@drawable/ic_backround">
+    android:background="@drawable/ic_background">
     <ImageView
         app:srcCompat="@drawable/icon"
         android:background="@android:color/transparent"
@@ -16,7 +16,7 @@
         android:layout_marginBottom="-64.14dp"
         android:layout_height="128.38dp"
         android:elevation="21dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/todo"
 
         />
     <androidx.cardview.widget.CardView
@@ -46,11 +46,11 @@
                 android:gravity="bottom"
                 android:id="@+id/username"
                 android:hint="@string/user_name"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
                 android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:drawableStart="@drawable/ic_baseline_person_24" />
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:autofillHints="@string/user_name" />
             <EditText
                 android:layout_marginTop="25dp"
                 android:backgroundTint="#70AFAFAF"
@@ -60,10 +60,10 @@
                 android:hint="@string/password"
                 android:id="@+id/password"
                 android:inputType="textPassword"
-                android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:drawableStart="@drawable/ic_baseline_lock_24" />
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:autofillHints="@string/password" />
         </LinearLayout>
             <LinearLayout
                 android:layout_weight=".3"
@@ -72,7 +72,6 @@
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/forgot_password"
-                    android:layout_marginRight="20dp"
                     android:gravity="end"
                     android:text="@string/forgot_password"
                     android:layout_width="match_parent"
@@ -84,7 +83,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:gravity="center">
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                android:backgroundTintMode="add"
                 android:text="@string/login"
                 android:id="@+id/login"
                 android:layout_marginLeft="20dp"
@@ -105,16 +105,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="NestedWeights">
                     <View
                         android:layout_marginStart="25dp"
                         android:layout_weight="2"
                         android:layout_marginEnd="5dp"
                         android:layout_width="0dp"
                         android:layout_height="2dp"
-                        android:background="#70AFAFAF"
-                        android:layout_marginRight="0dp"
-                        android:layout_marginLeft="25dp" />
+                        android:background="#70AFAFAF" />
 
                     <TextView
 
@@ -128,16 +127,15 @@
                         android:layout_marginStart="5dp"
                         android:layout_width="0dp"
                         android:layout_height="2dp"
-                        android:background="#70AFAFAF"
-                        android:layout_marginLeft="0dp"
-                        android:layout_marginRight="25dp" />
+                        android:background="#70AFAFAF" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".5"
                     android:gravity="center">
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:backgroundTintMode="add"
                         android:id="@+id/google_plus"
                         android:layout_gravity="top"
                         android:background="@drawable/ic_google_plus"
@@ -149,15 +147,15 @@
                         android:layout_marginStart="10dp"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_facebook_new_2019_seeklogo_com_3"
-                        android:layout_marginLeft="10dp" />
+                        app:srcCompat="@drawable/ic_facebook_new_2019_seek_logo_com_3"
+                        android:contentDescription="@string/todo" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_weight=".4"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp">
                 <TextView
-                    android:text="@string/don_t_have_an_accout"
+                    android:text="@string/don_t_have_an_account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 

@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.fragments.HomeFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/ic_sell_products_online">
+
+            <ImageView
+                android:layout_marginTop="29.07dp"
+                android:background="@drawable/sell_products_online"
+                android:id="@+id/image_view"
+                android:layout_width="253.6dp"
+                android:layout_height="133.93dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/todo" />
+            <TextView
+                android:textColor="#070707"
+                android:layout_marginTop="27dp"
+                android:layout_width="180dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/log_line"
+                android:textSize="24sp"
+                android:fontFamily="@font/arlrdbd"
+                 />
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/shop_now"
+                android:fontFamily="@font/arlrdbd"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/button_background"
+                android:layout_width="98dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="20dp" />
+            </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:background="#3483E4FE"
+            android:layout_width="match_parent"
+            android:layout_height="146dp" />
+
+
+
+
+
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:textColor="#F7931E"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="@string/todays_top_picks"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:fontFamily="@font/arlrdbd"
+            />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" >
+        </androidx.viewpager.widget.ViewPager>
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:layout_marginTop="10dp"
+            android:id="@+id/worm_dots_indicator_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:dotsColor="@color/orange"
+            app:dotsCornerRadius="4dp"
+            app:dotsSize="8dp"
+            app:dotsSpacing="4dp"
+            app:dotsStrokeColor="@android:color/black"
+            app:dotsStrokeWidth="0.4dp" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="31dp"
+            android:textColor="#F7931E"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="@string/top_deals_around"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:fontFamily="@font/arlrdbd"
+            android:layout_marginBottom="6dp"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" >
+        </androidx.viewpager.widget.ViewPager>
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/worm_dots_indicator_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            app:dotsColor="@color/orange"
+            app:dotsCornerRadius="4dp"
+            app:dotsSize="8dp"
+            app:dotsSpacing="4dp"
+            app:dotsStrokeColor="@android:color/black"
+            app:dotsStrokeWidth="0.4dp" />
+
+
+
+
+
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="31dp"
+            android:textColor="#F7931E"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="@string/todays_top_picks"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:fontFamily="@font/arlrdbd"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_3"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" >
+        </androidx.viewpager.widget.ViewPager>
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/worm_dots_indicator_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:dotsColor="@color/orange"
+            app:dotsCornerRadius="4dp"
+            android:layout_marginTop="10dp"
+            app:dotsSize="8dp"
+            app:dotsSpacing="4dp"
+            app:dotsStrokeColor="@android:color/black"
+            app:dotsStrokeWidth="0.4dp" />
+
+
+
+
+
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="31dp"
+            android:textColor="#F7931E"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="@string/best_events_you_can_attend"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:fontFamily="@font/arlrdbd"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_4"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" >
+        </androidx.viewpager.widget.ViewPager>
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/worm_dots_indicator_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:dotsColor="@color/orange"
+            app:dotsCornerRadius="4dp"
+            app:dotsSize="8dp"
+            app:dotsSpacing="4dp"
+            app:dotsStrokeColor="@android:color/black"
+            app:dotsStrokeWidth="0.4dp" />
+
+
+        <TextView
+            android:textColor="#070707"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arlrdbd"
+            android:text="@string/your_feed"
+            android:textSize="26sp"
+            android:paddingStart="21dp"
+            tools:ignore="RtlSymmetry" />
+
+<LinearLayout
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginTop="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@android:color/transparent"
+                android:layout_width="200dp"
+                android:layout_height="303dp"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="283dp"
+                    android:elevation="4dp"
+                    app:cardElevation="4dp"
+                    tools:targetApi="lollipop">
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/image_top_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:contentDescription="@string/todo" />
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginTop="109dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:layout_marginTop="37dp"
+                            android:id="@+id/text_info_1"
+                            android:layout_below="@+id/image_top_1"
+                            android:layout_width="86dp"
+                            android:layout_height="19dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/seller_name_1"
+                            android:layout_below="@+id/text_info_1"
+                            android:layout_width="38dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/short_desc_1"
+                            android:layout_marginTop="9dp"
+                            android:layout_below="@+id/seller_name_1"
+                            android:layout_width="145dp"
+                            android:layout_height="46dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/read_more_1"
+                            android:textColor="#403E3E"
+                            android:textSize="8sp"
+                            android:text="@string/read_more"
+                            android:layout_below="@+id/short_desc_1"
+                            android:layout_width="47dp"
+                            android:layout_height="11dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginStart="18dp"
+                            app:drawableRightCompat="@drawable/drop_down"
+                            tools:ignore="SmallSp"
+                            app:drawableEndCompat="@drawable/drop_down" />
+
+                        <ImageView
+                            app:srcCompat="@drawable/ic_eye"
+                            android:layout_marginBottom="11dp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/eye_1"
+                            android:layout_width="10.34dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="106.88dp"
+                            android:contentDescription="@string/todo" />
+                        <ImageView
+                            app:srcCompat="@drawable/ic_like"
+                            android:layout_alignTop="@+id/eye_1"
+                            android:id="@+id/like_1"
+                            android:layout_width="6.95dp"
+                            android:layout_height="8dp"
+                            android:layout_toEndOf="@+id/eye_1"
+                            android:layout_marginStart="7.76dp"
+                            android:contentDescription="@string/todo" />
+                        <ImageView
+                            app:srcCompat="@drawable/ic_comment"
+                            android:layout_alignTop="@+id/eye_1"
+                            android:id="@+id/comment_1"
+                            android:layout_width="9.27dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/like_1"
+                            android:contentDescription="@string/todo" />
+                        <ImageView
+                            app:srcCompat="@drawable/ic_share"
+                            android:layout_alignTop="@id/eye_1"
+                            android:id="@+id/share_1"
+                            android:layout_width="5.15dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/comment_1"
+                            android:contentDescription="@string/todo" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@android:color/transparent"
+                android:layout_width="200dp"
+                android:layout_height="303dp"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="283dp"
+                    android:elevation="4dp"
+                    app:cardElevation="4dp"
+                    tools:targetApi="lollipop">
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/image_top_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"
+                            android:contentDescription="@string/todo" />
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginTop="109dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:layout_marginTop="37dp"
+                            android:id="@+id/text_info_2"
+                            android:layout_below="@+id/image_top_2"
+                            android:layout_width="86dp"
+                            android:layout_height="19dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/seller_name_2"
+                            android:layout_below="@+id/text_info_2"
+                            android:layout_width="38dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/short_desc_2"
+                            android:layout_marginTop="9dp"
+                            android:layout_below="@+id/seller_name_2"
+                            android:layout_width="145dp"
+                            android:layout_height="46dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/read_more_2"
+                            android:textColor="#403E3E"
+                            android:textSize="8sp"
+                            android:text="@string/read_more"
+                            android:layout_below="@+id/short_desc_2"
+                            android:layout_width="47dp"
+                            android:layout_height="11dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginStart="18dp"
+                            app:drawableRightCompat="@drawable/drop_down"
+                            tools:ignore="SmallSp"
+                            app:drawableEndCompat="@drawable/drop_down" />
+
+                        <ImageView
+                            app:srcCompat="@drawable/ic_eye"
+                            android:layout_marginBottom="11dp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/eye_2"
+                            android:layout_width="10.34dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="106.88dp"
+                            android:contentDescription="@string/todo" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_like"
+                            android:layout_alignTop="@+id/eye_2"
+                            android:id="@+id/like_2"
+                            android:layout_width="6.95dp"
+                            android:layout_height="8dp"
+                            android:layout_toEndOf="@+id/eye_2"
+                            android:layout_marginStart="7.76dp" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_comment"
+                            android:layout_alignTop="@+id/eye_2"
+                            android:id="@+id/comment_2"
+                            android:layout_width="9.27dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/like_2" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_share"
+                            android:layout_alignTop="@id/eye_2"
+                            android:id="@+id/share_2"
+                            android:layout_width="5.15dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/comment_2" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@android:color/transparent"
+                android:layout_width="200dp"
+                android:layout_height="303dp"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="283dp"
+                    android:elevation="4dp"
+                    app:cardElevation="4dp"
+                    >
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            android:id="@+id/image_top_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginTop="109dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:layout_marginTop="37dp"
+                            android:id="@+id/text_info_3"
+                            android:layout_below="@+id/image_top_3"
+                            android:layout_width="86dp"
+                            android:layout_height="19dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/seller_name_3"
+                            android:layout_below="@+id/text_info_3"
+                            android:layout_width="38dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/short_desc_3"
+                            android:layout_marginTop="9dp"
+                            android:layout_below="@+id/seller_name_3"
+                            android:layout_width="145dp"
+                            android:layout_height="46dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/read_more_3"
+                            android:textColor="#403E3E"
+                            android:textSize="8sp"
+                            android:text="@string/read_more"
+                            android:layout_below="@+id/short_desc_3"
+                            android:layout_width="47dp"
+                            android:layout_height="11dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginStart="18dp"
+                            app:drawableRightCompat="@drawable/drop_down"
+                            app:drawableEndCompat="@drawable/drop_down"
+                            tools:ignore="SmallSp" />
+
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_eye"
+                            android:layout_marginBottom="11dp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/eye_3"
+                            android:layout_width="10.34dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="106.88dp" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_like"
+                            android:layout_alignTop="@+id/eye_3"
+                            android:id="@+id/like_3"
+                            android:layout_width="6.95dp"
+                            android:layout_height="8dp"
+                            android:layout_toEndOf="@+id/eye_3"
+                            android:layout_marginStart="7.76dp" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_comment"
+                            android:layout_alignTop="@+id/eye_3"
+                            android:id="@+id/comment_3"
+                            android:layout_width="9.27dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/like_3" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_share"
+                            android:layout_alignTop="@id/eye_3"
+                            android:id="@+id/share_3"
+                            android:layout_width="5.15dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/comment_3" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@android:color/transparent"
+                android:layout_width="200dp"
+                android:layout_height="303dp"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="283dp"
+                    android:elevation="4dp"
+                    app:cardElevation="4dp"
+                    tools:targetApi="lollipop">
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            android:id="@+id/image_top_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginTop="109dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:layout_marginTop="37dp"
+                            android:id="@+id/text_info_4"
+                            android:layout_below="@+id/image_top_4"
+                            android:layout_width="86dp"
+                            android:layout_height="19dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/seller_name_4"
+                            android:layout_below="@+id/text_info_4"
+                            android:layout_width="38dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/short_desc_4"
+                            android:layout_marginTop="9dp"
+                            android:layout_below="@+id/seller_name_4"
+                            android:layout_width="145dp"
+                            android:layout_height="46dp"
+                            android:layout_marginStart="18dp" />
+                        <TextView
+                            android:id="@+id/read_more_4"
+                            android:textColor="#403E3E"
+                            android:textSize="8sp"
+                            android:text="@string/read_more"
+                            android:layout_below="@+id/short_desc_4"
+                            android:layout_width="47dp"
+                            android:layout_height="11dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginStart="18dp"
+                            app:drawableRightCompat="@drawable/drop_down"
+                            app:drawableEndCompat="@drawable/drop_down"
+                            tools:ignore="SmallSp" />
+
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_eye"
+                            android:layout_marginBottom="11dp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/eye_4"
+                            android:layout_width="10.34dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="106.88dp" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_like"
+                            android:layout_alignTop="@+id/eye_4"
+                            android:id="@+id/like_4"
+                            android:layout_width="6.95dp"
+                            android:layout_height="8dp"
+                            android:layout_toEndOf="@+id/eye_4"
+                            android:layout_marginStart="7.76dp" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_comment"
+                            android:layout_alignTop="@+id/eye_4"
+                            android:id="@+id/comment_4"
+                            android:layout_width="9.27dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/like_4" />
+                        <ImageView
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_share"
+                            android:layout_alignTop="@id/eye_4"
+                            android:id="@+id/share_4"
+                            android:layout_width="5.15dp"
+                            android:layout_height="8dp"
+                            android:layout_marginStart="7.76dp"
+                            android:layout_toEndOf="@+id/comment_4" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="14dp"
+            android:id="@+id/view_more_button"
+            android:background="@drawable/ic_view_more_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="103dp"
+            android:layout_height="26dp"
+            android:text="@string/view_more"
+            android:fontFamily="@font/arlrdbd"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="106dp"/>
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="610dp"
+            android:numColumns="2"
+            tools:ignore="NestedScrolling" />
+
+
+    </LinearLayout>
+
+    </ScrollView>

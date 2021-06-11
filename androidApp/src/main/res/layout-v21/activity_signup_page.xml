@@ -4,9 +4,9 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".ui.login_page"
+tools:context=".ui.activity.login_signup_activity.SignupPage"
 android:orientation="vertical"
-android:background="@drawable/ic_backround">
+android:background="@drawable/ic_background">
   <ImageView
       app:srcCompat="@drawable/icon"
       android:background="@android:color/transparent"
@@ -16,7 +16,7 @@ android:background="@drawable/ic_backround">
       android:layout_marginBottom="-64.14dp"
       android:layout_height="128.38dp"
       android:elevation="21dp"
-      android:contentDescription="TODO"/>
+      android:contentDescription="@string/todo"/>
 <androidx.cardview.widget.CardView
     android:id="@+id/card"
     android:layout_centerInParent="true"
@@ -43,22 +43,22 @@ android:background="@drawable/ic_backround">
           android:layout_marginBottom="5dp"
           android:id="@+id/yours_name"
           android:hint="@string/your_name"
-          android:drawableLeft="@drawable/ic_baseline_person_24"
           android:inputType="text"
           android:layout_width="match_parent"
           android:layout_height="45dp"
-          android:drawableStart="@drawable/ic_baseline_person_24" />
+          android:drawableStart="@drawable/ic_baseline_person_24"
+          android:autofillHints="@string/your_name" />
       <EditText
           android:backgroundTint="#70AFAFAF"
           android:gravity="bottom"
           android:layout_marginBottom="5dp"
           android:id="@+id/email"
           android:hint="@string/your_email"
-          android:drawableLeft="@drawable/ic_baseline_email_24"
           android:inputType="textEmailAddress"
           android:layout_width="match_parent"
           android:layout_height="45dp"
-          android:drawableStart="@drawable/ic_baseline_email_24" />
+          android:drawableStart="@drawable/ic_baseline_email_24"
+          android:autofillHints="@string/your_email" />
       <EditText
           android:backgroundTint="#70AFAFAF"
           android:gravity="bottom"
@@ -67,10 +67,10 @@ android:background="@drawable/ic_backround">
           android:hint="@string/password"
           android:id="@+id/new_password"
           android:inputType="textPassword"
-          android:drawableLeft="@drawable/ic_baseline_lock_24"
           android:layout_width="match_parent"
           android:layout_height="45dp"
-          android:drawableStart="@drawable/ic_baseline_lock_24" />
+          android:drawableStart="@drawable/ic_baseline_lock_24"
+          android:autofillHints="@string/password" />
       <EditText
           android:backgroundTint="#70AFAFAF"
           android:gravity="bottom"
@@ -79,10 +79,10 @@ android:background="@drawable/ic_backround">
           android:hint="@string/confirm_password"
           android:id="@+id/confirm_password"
           android:inputType="textPassword"
-          android:drawableLeft="@drawable/ic_baseline_lock_24"
           android:layout_width="match_parent"
           android:layout_height="45dp"
-          android:drawableStart="@drawable/ic_baseline_lock_24" />
+          android:drawableStart="@drawable/ic_baseline_lock_24"
+          android:autofillHints="@string/confirm_password" />
     </LinearLayout>
 
     <LinearLayout
@@ -90,7 +90,8 @@ android:background="@drawable/ic_backround">
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center">
-      <Button
+      <androidx.appcompat.widget.AppCompatButton
+          android:backgroundTintMode="add"
           android:id="@+id/sign_up"
           android:text="@string/sign_up"
           android:layout_marginLeft="20dp"
@@ -111,7 +112,8 @@ android:background="@drawable/ic_backround">
           android:layout_width="match_parent"
           android:layout_height="0dp"
           android:gravity="center"
-          android:orientation="horizontal">
+          android:orientation="horizontal"
+          tools:ignore="NestedWeights">
         <View
             android:layout_marginStart="25dp"
             android:layout_weight="2"
@@ -119,8 +121,7 @@ android:background="@drawable/ic_backround">
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:background="#E0DBDB"
-            android:layout_marginRight="0dp"
-            android:layout_marginLeft="25dp" />
+            tools:ignore="NestedWeights" />
 
         <TextView
 
@@ -136,16 +137,15 @@ android:background="@drawable/ic_backround">
             android:layout_marginStart="5dp"
             android:layout_width="0dp"
             android:layout_height="2dp"
-            android:background="#E0DBDB"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="25dp" />
+            android:background="#E0DBDB" />
       </LinearLayout>
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="0dp"
           android:layout_weight=".5"
           android:gravity="center">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:backgroundTintMode="add"
             android:id="@+id/google_plus"
             android:layout_gravity="top"
             android:background="@drawable/ic_google_plus"
@@ -157,19 +157,19 @@ android:background="@drawable/ic_backround">
             android:layout_marginStart="10dp"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            app:srcCompat="@drawable/ic_facebook_new_2019_seeklogo_com_3"
-            android:layout_marginLeft="10dp" />
+            app:srcCompat="@drawable/ic_facebook_new_2019_seek_logo_com_3"
+            android:contentDescription="@string/todo" />
       </LinearLayout>
       <LinearLayout
           android:layout_weight=".4"
           android:layout_width="wrap_content"
           android:layout_height="0dp">
         <TextView
-            android:text="@string/have_an_accout"
+            android:text="@string/have_an_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/signin"
+            android:id="@+id/sign_in"
             android:textColor="@color/orange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
