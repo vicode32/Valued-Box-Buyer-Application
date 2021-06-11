@@ -12,6 +12,13 @@ import com.example.valuedbox_1.android.R
 import com.example.valuedbox_1.android.ui.model_class.Data
 import de.hdodenhof.circleimageview.CircleImageView
 
+
+/**
+ * common class which can be used simply by passing the following parameters
+ * list: MutableList<Data> -> the data list which is to be shown on the grid view
+ * layout_id: Int -> the grid container(layout) id which is to be inflated
+ */
+
 class GridViewAdapter(private val list: MutableList<Data>, private val layout_id: Int): BaseAdapter() {
     override fun getCount(): Int {
         return list.size
