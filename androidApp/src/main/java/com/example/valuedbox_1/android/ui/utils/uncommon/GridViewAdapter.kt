@@ -1,4 +1,4 @@
-package com.example.valuedbox_1.android.ui.utils
+package com.example.valuedbox_1.android.ui.utils.uncommon
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -49,6 +49,7 @@ class GridViewAdapter(private val list: MutableList<Data>, private val layout_id
             info.text=list[position].info
             circularImage.setImageResource(list[position].circular_image)
             imageTop.setImageResource(list[position].image_top)
+
 
         return view
     }

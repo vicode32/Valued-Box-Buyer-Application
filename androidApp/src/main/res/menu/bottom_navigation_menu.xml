@@ -10,6 +10,9 @@
         android:icon="@drawable/product"
         android:title="@string/product"/>
     <item
+        android:enabled="true"
+        android:title="" />
+    <item
         android:id="@+id/services"
         android:enabled="true"
         android:icon="@drawable/services"

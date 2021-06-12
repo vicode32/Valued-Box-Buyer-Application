@@ -6,13 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.GridView
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import androidx.appcompat.widget.AppCompatButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.valuedbox_1.android.R
 import com.example.valuedbox_1.android.ui.utils.ViewPager
-import com.example.valuedbox_1.android.ui.utils.RecyclerViewAdapter
-import com.example.valuedbox_1.android.ui.utils.GridViewAdapter
+import com.example.valuedbox_1.android.ui.utils.uncommon.RecyclerViewAdapter
+import com.example.valuedbox_1.android.ui.utils.uncommon.GridViewAdapter
 import com.example.valuedbox_1.android.ui.model_class.Data
 
 /**
@@ -30,6 +32,7 @@ import com.example.valuedbox_1.android.ui.model_class.Data
 class HomeFragment : Fragment() {
 
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -45,12 +48,14 @@ class HomeFragment : Fragment() {
         /**
          * using the common view pager from the utils package
          */
+       // val height_of_grid_container:RelativeLayout=view.findViewById(R.id.relative_layout_od_grid_container)
         val gridView:GridView=view.findViewById(R.id.grid_view)
         val viewMoreButton:AppCompatButton=view.findViewById(R.id.view_more_button)
 
         val listOfVp1:MutableList<Int?> = mutableListOf(R.drawable.vp_1,null,null,null)
         val vp1 = ViewPager(view,listOfVp1,fragmentManager,R.id.view_pager_1,R.id.worm_dots_indicator_1)
         vp1.pager()
+
 
         val listOfVp2:MutableList<Int?> = mutableListOf(R.drawable.vp_2,null,null,null)
         val vp2 =ViewPager(view,listOfVp2,fragmentManager,R.id.view_pager_2,R.id.worm_dots_indicator_2)
@@ -118,6 +123,7 @@ class HomeFragment : Fragment() {
             listForGridAdapter.add(dataList2)
             listForGridAdapter.add(dataList3)
             listForGridAdapter.add(dataList4)
+         //   gridView.layoutParams.height=listForGridAdapter.size*height_of_grid_container.layoutParams.height
             val gridViewAdapter =
                 GridViewAdapter(listForGridAdapter, R.layout.container_of_grid_view)
             gridView.adapter = gridViewAdapter
