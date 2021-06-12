@@ -14,7 +14,7 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 
 /**
- * common class which can be used simply by passing the following parameters
+ * class which can be used simply by passing the following parameters
  * list: MutableList<Data> -> the data list which is to be shown on the grid view
  * layout_id: Int -> the grid container(layout) id which is to be inflated
  */
